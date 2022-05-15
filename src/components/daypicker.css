@@ -1,0 +1,23 @@
+:root {
+    --rdp-cell-size: 30px;
+}
+
+.rdp-caption_label {
+    font-size: 14px !important;
+    font-weight: 600;
+}
+
+.rdp-day {
+    font-size: 11px;
+    font-weight: 300;
+}
+
+.rdp-day_today {
+}
+
+.rdp-day_selected:not([disabled]),
+.my-selected:hover:not([disabled]) {
+    background-color: #d6edda !important;
+    color: #83c090 !important;
+    border: none !important;
+}

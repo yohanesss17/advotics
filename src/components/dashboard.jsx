@@ -9,6 +9,14 @@ import dashboard from '../../src/assets/image/dashboard.png';
 import product from '../../src/assets/image/product.png';
 import menu from '../../src/assets/image/menu.png';
 
+import { DayPicker, } from 'react-day-picker';
+import { differenceInCalendarDays } from 'date-fns';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronDown, faTimes } from '@fortawesome/free-solid-svg-icons'
+
+import 'react-day-picker/dist/style.css';
+import './daypicker.css'
+
 import {
     Chart as ChartJS,
     LinearScale,
@@ -20,16 +28,8 @@ import {
     registerables as registerablesJS
 } from 'chart.js';
 import { Chart } from 'react-chartjs-2';
+
 ChartJS.register(...registerablesJS);
-
-import { DayPicker, } from 'react-day-picker';
-import { differenceInCalendarDays } from 'date-fns';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown, faTimes } from '@fortawesome/free-solid-svg-icons'
-
-import 'react-day-picker/dist/style.css';
-import './daypicker.css'
-
 ChartJS.register(
     LinearScale,
     CategoryScale,

@@ -1,3 +1,8 @@
+@media only screen and (max-width: 600px) {
+    :root {
+        --rdp-cell-size: 48px !important;
+    }
+}
 :root {
     --rdp-cell-size: 30px;
 }
@@ -20,4 +25,9 @@
     background-color: #d6edda !important;
     color: #83c090 !important;
     border: none !important;
+}
+
+canvas {
+    /* max-width: 500px;
+    margin: auto; */
 }

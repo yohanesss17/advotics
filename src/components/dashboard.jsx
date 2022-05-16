@@ -377,7 +377,7 @@ class Dashboard extends React.Component {
                             <div className="basis-full lg:basis-6/12 flex justify-end mt-[16px] lg:mt-[0px]">
                                 <div className='w-full lg:w-fit bg-white lg:h-[48px] py-[13px] px-[8px] lg:px-[16px] flex flex-wrap cursor-pointer items-center' onClick={this.openCalendar} ref={this.calendarTrigger}>
                                     <img alt="" src={calendar} />
-                                    <h3 className='ml-[8px] lg:ml-[16px] text-[#8B8B8B] text-[14px] lg:text-[16px]'>Period <span className="text-[#6A6A6A] px-[10px] lg:px-[12px]">{this.state.placeholderStart.toDateString()} - {this.state.placeholderEnd.toDateString()}</span></h3>
+                                    <h3 className='ml-[8px] lg:ml-[16px] text-[#8B8B8B] text-[12px] lg:text-[16px]'>Period <span className="text-[#6A6A6A] px-[5px] lg:px-[12px]">{this.state.placeholderStart.toDateString()} - {this.state.placeholderEnd.toDateString()}</span></h3>
                                     <FontAwesomeIcon icon={faChevronDown} />
                                 </div>
                             </div>

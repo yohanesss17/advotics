@@ -17,10 +17,13 @@ import {
     PointElement,
     LineElement,
     Tooltip,
+    registerables as registerablesJS
 } from 'chart.js';
+import { Chart } from 'react-chartjs-2';
+ChartJS.register(...registerablesJS);
+
 import { DayPicker, } from 'react-day-picker';
 import { differenceInCalendarDays } from 'date-fns';
-import { Chart } from 'react-chartjs-2';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown, faTimes } from '@fortawesome/free-solid-svg-icons'
 
